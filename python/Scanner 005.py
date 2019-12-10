@@ -16,14 +16,15 @@ print("Started Scan: "+str(datetime.now()))
 print("-" * 50)
 
 try:
-        for port in range(10,90):
+        for port in range(1,10000):
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             socket.setdefaulttimeout(1)
             result = s.connect_ex((target,port))
-            print("Checking Port {}".format(port))
+            #print("Checking Port {}".format(port))
             if result == 0:
                     print("Port {} is open".format(port))
             s.close()
+
 
 except KeyboardInterrupt:
     print("\nSaindo do Scanner.")
@@ -35,3 +36,9 @@ except socket.gaierror:
 except socket.error:
     print("Couldn't connect to server.")
     sys.exit()
+
+print("-" * 50)
+print("Terminou o scan!!" +target)
+print("Scan Terminado as : "+str(datetime.now()))
+print("-" * 50)
+
