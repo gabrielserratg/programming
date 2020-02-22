@@ -19,15 +19,16 @@ import random
 WDemail = 'henriquesilveira@gmail.com'
 WDpassword = 'gabrielserra'
 
-#Creator Full names for making accounts
+#Generator Full names for making accounts and infos viewer
 
 Filename='/root/Desktop/programming/Python-resultados/firstnames.txt'
 File=open(Filename,'r').readlines()
 WDfullname=random.choice(File)[:-1]
 WDfullname=WDfullname+' '
 WDfullname=WDfullname+random.choice(File)[:-1]
-print WDfullname
-
+print ("Full Name: " + WDfullname)
+print ("Email: " + WDemail)
+print ("Password: " + WDpassword)
 
 #page for login direct
 
@@ -76,8 +77,8 @@ signup_btn.click()
 time.sleep(1)
 
 #button for login default
-login_btn = driver.find_element_by_xpath("//button[@class='sqdOP  L3NKy   y3zKF     '][@type='submit']")
-login_btn.click()
+#login_btn = driver.find_element_by_xpath("//button[@class='sqdOP  L3NKy   y3zKF     '][@type='submit']")
+#login_btn.click()
 
 time.sleep(4)
 
