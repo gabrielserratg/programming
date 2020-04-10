@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Login Painel</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div id="login_div" class="main-div">
+        <img class="imgperson" src="person.png">
+        <h3 style="text-align: center;">Login Painel</h3>
+        <h5 id="falha"> </h5>
+        <input type="text" placeholder="Email..." id="user_field" />
+        <input type="password" placeholder="Password..." id="password_field" />
+
+        <button onclick="login()">Login to Account</button>
+        <button class="btnregister" onclick="register()">Register Account</button>
+    </div>
+
+    <div id="user_div" class="loggedin-div">
+        <h3>Welcome User</h3>
+        <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAVEU2c5OremgKtgN_zl8sf-KCPGJOm8FM",
+            authDomain: "loginadmin-a7a0c.firebaseapp.com",
+            databaseURL: "https://loginadmin-a7a0c.firebaseio.com",
+            projectId: "loginadmin-a7a0c",
+            storageBucket: "loginadmin-a7a0c.appspot.com",
+            messagingSenderId: "934649551556",
+            appId: "1:934649551556:web:fea8f3c9bc468dea8ec791",
+            measurementId: "G-J8S7WRW2KR"
+
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="index.js"></script>
+
+</body>
+<p class="fimp">Coded By gabriel</p>
+
+</html>

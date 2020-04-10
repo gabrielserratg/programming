@@ -1,0 +1,7 @@
+{
+  "HOST": "irc.chat.twitch.tv",
+  "PORT": 6667,
+  "AUTH_NICK": "ricardodetest",
+  "AUTH_PASS": "oauth:urvmguz9d59qjwyq0vi3gau0fvgubp",
+  "channel": "nerdengenheiro"
+}
